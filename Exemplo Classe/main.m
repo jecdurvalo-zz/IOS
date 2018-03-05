@@ -7,11 +7,20 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Atleta.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        Atleta *a = [[Atleta alloc]init];
+        [a setNome:@"José da Silva"];
+        [a setIdade:23];
+        
+        NSLog(@"O Iron Man %@ tem %d anos", [a getNome], [a getIdade]);
+        [a calcularImcComPeso:80 eAltura:1.70];
+        NSLog(@"%@", [a calcularRendimentoComDistancia:5000 eTempo:2]);
+        
+        Atleta *a2 = [[Atleta alloc] initWithNome:@"Joana Durvalo" andIdade:20];
+        
     }
     return 0;
 }

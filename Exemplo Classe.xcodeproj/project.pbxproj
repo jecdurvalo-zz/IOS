@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AC24DBF3204D5E7100902227 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AC24DBF2204D5E7100902227 /* main.m */; };
+		AC24DBFB204D5F5800902227 /* Atleta.m in Sources */ = {isa = PBXBuildFile; fileRef = AC24DBFA204D5F5800902227 /* Atleta.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		AC24DBEF204D5E7100902227 /* Exemplo Classe */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Exemplo Classe"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC24DBF2204D5E7100902227 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AC24DBF9204D5F5800902227 /* Atleta.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Atleta.h; sourceTree = "<group>"; };
+		AC24DBFA204D5F5800902227 /* Atleta.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Atleta.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				AC24DBF2204D5E7100902227 /* main.m */,
+				AC24DBF9204D5F5800902227 /* Atleta.h */,
+				AC24DBFA204D5F5800902227 /* Atleta.m */,
 			);
 			path = "Exemplo Classe";
 			sourceTree = "<group>";
@@ -119,6 +124,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC24DBFB204D5F5800902227 /* Atleta.m in Sources */,
 				AC24DBF3204D5E7100902227 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
