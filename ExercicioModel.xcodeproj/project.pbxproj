@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AC66D8D720569E6500A65DDC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AC66D8D620569E6500A65DDC /* main.m */; };
+		AC66D8E220569EBD00A65DDC /* Enfermeira.m in Sources */ = {isa = PBXBuildFile; fileRef = AC66D8E120569EBD00A65DDC /* Enfermeira.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		AC66D8D320569E6500A65DDC /* ExercicioModel */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ExercicioModel; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC66D8D620569E6500A65DDC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AC66D8E020569EBD00A65DDC /* Enfermeira.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Enfermeira.h; sourceTree = "<group>"; };
+		AC66D8E120569EBD00A65DDC /* Enfermeira.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Enfermeira.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				AC66D8D620569E6500A65DDC /* main.m */,
+				AC66D8E020569EBD00A65DDC /* Enfermeira.h */,
+				AC66D8E120569EBD00A65DDC /* Enfermeira.m */,
 			);
 			path = ExercicioModel;
 			sourceTree = "<group>";
@@ -120,6 +125,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC66D8D720569E6500A65DDC /* main.m in Sources */,
+				AC66D8E220569EBD00A65DDC /* Enfermeira.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
