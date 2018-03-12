@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		AC24DBF3204D5E7100902227 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AC24DBF2204D5E7100902227 /* main.m */; };
 		AC24DBFB204D5F5800902227 /* Atleta.m in Sources */ = {isa = PBXBuildFile; fileRef = AC24DBFA204D5F5800902227 /* Atleta.m */; };
+		AC66D84F2056992A00A65DDC /* Esporte.m in Sources */ = {isa = PBXBuildFile; fileRef = AC66D84E2056992A00A65DDC /* Esporte.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		AC24DBF2204D5E7100902227 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AC24DBF9204D5F5800902227 /* Atleta.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Atleta.h; sourceTree = "<group>"; };
 		AC24DBFA204D5F5800902227 /* Atleta.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Atleta.m; sourceTree = "<group>"; };
+		AC66D84D2056992A00A65DDC /* Esporte.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Esporte.h; sourceTree = "<group>"; };
+		AC66D84E2056992A00A65DDC /* Esporte.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Esporte.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,8 @@
 				AC24DBF2204D5E7100902227 /* main.m */,
 				AC24DBF9204D5F5800902227 /* Atleta.h */,
 				AC24DBFA204D5F5800902227 /* Atleta.m */,
+				AC66D84D2056992A00A65DDC /* Esporte.h */,
+				AC66D84E2056992A00A65DDC /* Esporte.m */,
 			);
 			path = "Exemplo Classe";
 			sourceTree = "<group>";
@@ -124,6 +129,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC66D84F2056992A00A65DDC /* Esporte.m in Sources */,
 				AC24DBFB204D5F5800902227 /* Atleta.m in Sources */,
 				AC24DBF3204D5E7100902227 /* main.m in Sources */,
 			);

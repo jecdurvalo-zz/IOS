@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "Atleta.h"
+#import "Esporte.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -21,6 +22,21 @@ int main(int argc, const char * argv[]) {
         
         Atleta *a2 = [[Atleta alloc] initWithNome:@"Joana Durvalo" andIdade:20];
         
-    }
-    return 0;
+    
+        Esporte *e = [[Esporte alloc]init];
+        //get & set [objeto atributo]
+        [e setModalidade:@"Judô"];
+        [e setQtdeFederados:300];
+    
+        NSLog(@"Esporte: %@", [e modalidade]);
+        
+        //Get & Set usando object.atributo
+        e.modalidade = @"Nataçāo";
+        e.qtdeFederados = 500;
+        NSLog(@"Esporte: %@", e.modalidade);
+        
+        [e premiar];
+}
+
+return 0;
 }
