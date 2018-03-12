@@ -9,9 +9,9 @@
 #import "Esporte.h"
 
 @implementation Esporte
-// @Synthesize >> não é obrigatório
+
 -(void)premiar{
-    //modalidade: parametros do modalidade
+
 }
 
 @end

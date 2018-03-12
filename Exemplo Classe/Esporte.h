@@ -10,7 +10,7 @@
 
 @interface Esporte : NSObject
 
-//Get & Set @property
+//Gettters and Setters
 @property(nonatomic, retain)NSString *modalidade;
 @property(nonatomic)int qtdeFederados;
 
