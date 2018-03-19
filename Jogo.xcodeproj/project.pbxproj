@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		ACA7B91A205FD5DA0015C69D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA7B919205FD5DA0015C69D /* main.m */; };
+		ACA7B922205FD5EA0015C69D /* Pokemon.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA7B921205FD5EA0015C69D /* Pokemon.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		ACA7B916205FD5DA0015C69D /* Jogo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Jogo; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACA7B919205FD5DA0015C69D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ACA7B920205FD5EA0015C69D /* Pokemon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pokemon.h; sourceTree = "<group>"; };
+		ACA7B921205FD5EA0015C69D /* Pokemon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Pokemon.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +60,8 @@
 		ACA7B918205FD5DA0015C69D /* Jogo */ = {
 			isa = PBXGroup;
 			children = (
+				ACA7B920205FD5EA0015C69D /* Pokemon.h */,
+				ACA7B921205FD5EA0015C69D /* Pokemon.m */,
 				ACA7B919205FD5DA0015C69D /* main.m */,
 			);
 			path = Jogo;
@@ -120,6 +125,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACA7B91A205FD5DA0015C69D /* main.m in Sources */,
+				ACA7B922205FD5EA0015C69D /* Pokemon.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
