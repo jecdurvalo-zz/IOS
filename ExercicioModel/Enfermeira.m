@@ -11,11 +11,13 @@
 
 @implementation Enfermeira
 
--(void)medicarPaciente{
-    NSLog(@"A enfermeira %@ vacionou o paciente!", _nome);
+-(void)medicarComRemedio:(NSString *)remedio{
+    NSLog(@"Eu %@ mediquei com o remedio %@!", self.nome, remedio);
 }
 
--(NSString *) mostrarValorDoSalario{
-    
+-(NSString *)vacinarComPaciente:(NSString *)paciente{
+    return[NSString stringWithFormat:@"Vacinei o paciente %@ ", paciente];
 }
+
+
 @end
