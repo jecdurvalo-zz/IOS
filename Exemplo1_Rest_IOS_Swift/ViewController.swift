@@ -30,74 +30,52 @@ class ViewController: UIViewController {
             //ações que serão efetuada quando a execução da task se completa
             //let texto = NSString(data: data!, encoding: String.Encoding.utf8.rawValue)
             //print(texto!)
-            if let nPQ = self.retornarNomePQ(data: data!){
+            
+            if let nPQ = self.retornar(data: data!, chave: "nome"){
+                // assume thread principal
                 DispatchQueue.main.async {
                     self.local.text = nPQ
                 }
             }
-            if let ePq = self.retornarEstadoPQ(data: data!){
+            
+            if let ePQ = self.retornar(data: data!, chave: "estado"){
+                // assume thread principal
                 DispatchQueue.main.async {
-                    self.estado.text = ePq
+                    self.local.text = ePQ
                 }
             }
-            if let appImagemURL = self.retornarImagemPQ(data: data!){
+            
+            if let appImagemURL = self.retornar(data: data!, chave: "urlFoto"){
                 DispatchQueue.main.async {
                     self.carregarImagemURL(imagemURL: appImagemURL)
                 }
             }
             
         })
+        
         //disparo da execução da task acima
         task?.resume()
     }
     
-    func retornarNomePQ(data:Data)->String?{
+    func retornar(data:Data, chave:String)->String?{
         var resposta:String?=nil
         do {
             //a linha abaixo faz a leitura dos valores do Json
             //NSJSONSerialization faz o Parser do Json
             let json = try JSONSerialization.jsonObject(with: data, options: []) as! [String: AnyObject]
-            if let nomeParque = json["nome"] as? String{
+            if let nomeParque = json[chave] as? String{
                 resposta = nomeParque
             }
+            
+            if let estadoParque = json[chave] as? String{
+                resposta = estadoParque
+            }
+            
         }catch let error as NSError{
             resposta = "Falha ao carregar \(error.localizedDescription)"
         }
         return resposta
         
-    }
-    
-    func retornarEstadoPQ(data:Data)-> String?{
-        var resposta:String?=nil
-        do{
-            //a linha abaixo faz a leitura dos valoress do Json, NSJSONSeriaization faz o Parser do Json
-            let json = try JSONSerialization.jsonObject(with: data, options: []) as! [String: AnyObject]
-            //cria e popula uma string a partir da chave "estado"
-            if let estadoParque = json["estado"] as? String{
-                resposta = estadoParque
-            }
-            
-        }catch let error as NSError{
-            return "Falha ao carregar :\(error.localizedDescription)"
-        }
-        return resposta
-    }
-    
-    func retornarImagemPQ(data:Data)-> String?{
-        var resposta:String?=nil
-        do{
-            //a linha abaixo faz a leitura dos valoress do Json, NSJSONSeriaization faz o Parser do Json
-            let json = try JSONSerialization.jsonObject(with: data, options: []) as! [String: AnyObject]
-            //cria e popula uma string a partir da chave "urlfoto"
-            if let urlString = json["urlfoto"] as? String{
-                print(urlString)
-                resposta = urlString
-            }
-            
-        }catch let error as NSError{
-            return "Falha ao carregar :\(error.localizedDescription)"
-        }
-        return resposta
     }
     
     func carregarImagemURL(imagemURL:String){
